@@ -1,0 +1,106 @@
+.projectFormSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+
+    .projectFormSection__left, .projectFormSection__right {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .projectFormSection__left {
+        width: 30%;
+    }
+    .projectFormSection__right {
+        width: 66%;
+    }
+
+}
+.tagsList {
+    justify-content: space-around;
+    // margin-top: 5px;
+    display: flex;
+    padding-left: 0;
+    margin-top: 20px;
+
+    .tagSkills, .tagType {
+        list-style: none;
+        padding: 3px 0;
+        margin-right: 10px;
+        width: 100px;
+        border-radius: 0.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .tagType a {
+        text-decoration: none;
+        color: black;
+    }
+    .tagSkills {
+        color: white;
+        background-color: #C7D0C6;
+    }
+    .tagType {
+        color: black;
+        background-color:none;
+        border: solid 1px  #C7D0C6;
+    }
+}
+.profil {
+    .profil__name-pix {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        
+        .profil__name {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+        .profil__photo {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit:fill;
+        }
+    }
+    .profil__rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 20px;
+        
+        
+    }
+}
+
+@media (max-width: 940px) {
+    .projectFormSection {
+        flex-wrap: wrap;
+        margin-bottom: 0;;
+        .projectFormSection__left, .projectFormSection__right {
+            width: 100%;
+        }
+    }
+    .profil {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .tagsList {
+        justify-content: space-around;
+        .tagSkills, .tagType {
+            font-size: 10px;
+            width: 84px;
+        }
+    }
+}

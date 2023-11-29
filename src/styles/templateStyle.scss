@@ -1,0 +1,115 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600;700&display=swap');
+
+
+$main-color :#24481A;
+$second-color:#C7D0C6;
+//********** Initialisation **********
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//********** template style **********
+body {
+    display: flex;
+    justify-content: center;
+    min-width: 375px;
+}
+#root {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 375px;
+    min-height: 100vh;
+    color: $main-color;
+}
+main {
+    flex:  1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-top: 50px;
+    // margin-top: 50px;
+}
+
+//********** Hearder style **********
+header h1 {
+    font-family: 'Permanent Marker';
+    font-size: 35px;
+    width: 350px;
+}
+header h1 span {
+    font-size: 20px;
+}
+.navbar {
+    font-family: 'Black Ops One', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 50px 0;
+    width: 90%;
+    .navbar__nav {
+        display: flex;
+    }
+    .navbar__link {
+        color:$main-color;
+        list-style: none;
+        text-decoration: none;
+        height: 30px;
+        line-height: 30px;
+        padding: 20px;
+        font-size: 24px;       
+    }
+    .navbar__link:hover,.navbar__link.active {
+        
+        border-top: solid 2px;
+        border-bottom: solid 2px;
+        cursor: pointer;
+    }
+    .navbar__link:hover {
+        background-color: $second-color;
+    }
+}
+
+//********** Footer style **********
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    width: 90%;
+    color: $second-color;
+    background-color: $main-color;
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 940px) {
+    .navbar {
+        .navbar__link {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 10px;
+            margin-top:20px;
+        }
+        .navbar__logo {
+            width: 145px;
+            height: 47px;
+        }
+    }
+    footer {
+        font-size: 12px;
+        p {
+            width: 123px;
+            text-align: center;
+        }
+    }
+}
+
