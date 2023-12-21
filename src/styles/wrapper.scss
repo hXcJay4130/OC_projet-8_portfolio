@@ -8,7 +8,7 @@
     overflow: hidden;
     border-radius: 25px;
     .wrapper__image {
-        object-fit: fill;
+        object-fit: contain;
     }
     .wrapper__text {
         position: relative;
