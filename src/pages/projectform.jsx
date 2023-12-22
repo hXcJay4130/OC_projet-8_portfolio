@@ -16,7 +16,7 @@ function ProjectForm() {
     <main>
       <Profile projectObject={projectData} />
       <section className="projectFormSection">
-        <Collapse title="Contexte" content={projectData.description} collapseType="text" collapseClass="" />
+        <Collapse title="Contexte" content={projectData.description} collapseClass="" />
       </section>
       <Slideshow projectImg={projectData.pictures} />
       <section className="projectFormSection">

@@ -19,7 +19,7 @@
     color: white;
     background-color:#C7D0C6;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     padding: 10px;
 }
@@ -71,11 +71,16 @@
     justify-content: space-between;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 768px) {
     .about__collapse {
-        width: 86%;
+        width: 100%;
     }
     .collapse, .collapse__title  {
         font-size: 12px;
+        border-radius: 0;
+    }
+    .collapse__icon {
+        width: 16px;
+        height: 16px;
     }
 }
