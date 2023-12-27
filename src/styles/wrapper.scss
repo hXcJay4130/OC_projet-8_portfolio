@@ -1,36 +1,20 @@
 .wrapper {
     width: 90%;
-    height: 223px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 25px;
-    .wrapper__image {
-        object-fit: contain;
-    }
-    .wrapper__text {
-        position: relative;
-        top: -185%;
-        max-width: 100%;
-        font-size: 48px;
-        color: white;
-        overflow-wrap: normal;
+    height: auto;
+   
+    .wrapper__img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .wrapper {
         width: 100%;
-        height: 111px;
         border-radius: 0;
-        position: relative;
-        .wrapper__text {
-            font-size: 24px;
-            margin: 1em;
-            position: absolute;
-            top:0px;
-        }
+        .wrapper__img {
+            border-radius: 0;
+            }
     }
 }

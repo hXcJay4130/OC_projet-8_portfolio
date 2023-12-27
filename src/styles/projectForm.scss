@@ -88,9 +88,16 @@
         justify-content: center;
         margin-bottom: 0;;
         .projectFormSection__left, .projectFormSection__right {
-            text-align: center;
+            display: flex;
             width: 100%;
         }
+        .projectFormSection__left {
+            text-align: center;
+        }
+        .projectFormSection__right {
+            text-align: left;
+        }
+
     }
     .profil {
         display: flex;
@@ -100,10 +107,15 @@
         justify-content: space-between;
     }
     .tagsList {
+        width:100%;
         justify-content: space-around;
+        flex-wrap: wrap;
         .tagSkills, .tagType {
             font-size: 10px;
-            width: 84px;
+            margin-right: 0;
+            width: auto;
+            padding-left: 4px;
+            padding-right: 4px;
         }
     }
 }

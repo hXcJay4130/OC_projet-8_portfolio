@@ -20,7 +20,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Wrapper pixURL={backgroundhome} text=""/>
+      <Wrapper pixURL={backgroundhome} />
       <Routes>
         <Route path="/project/:projectId" element={<ProjectForm />}/>
         <Route path="/" element={<AboutMe />} />
